@@ -1,33 +1,26 @@
-// map ,fillter, arrow fnc
+// map function
 
-// How to write arrow fnc
+//Given an arrey, give me a new arrey in which every value is multiplied by 2
+//[1,2,3,4,5]
+//[2,4,6,8,10]
 
-//Simple way to write function
-function sum(a,b){
-    return a+b;
+const input = [1, 2,3, 4, 5 ];
+
+//  Solution
+// const newArrey = [];
+
+// for (let i = 0; i < input.length; i++)  {
+//         newArrey.push(input[i] * 9)
+// };
+
+// console.log(newArrey); 
+
+// Other solution with using map
+
+function transform(i){
+    return i * 9;
 };
-
-// Arrow fnc
-const sum =(a,b) => {
-    return a+b;
-};
-
-// This is tottaly different way 
-
-//Simple way to write function
-
-app.get("/", function(req,res) {
-
-});
-
-// Arrow fnc
-
-app.get("/", (req,res) => {
-
-});
-
-
-
-const ans = sum(10,6);
+//Map(arr, transform);
+const ans = input.map(transform);
 
 console.log(ans);
