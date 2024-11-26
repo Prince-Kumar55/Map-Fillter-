@@ -1,26 +1,21 @@
-// map function
+// Filltering function
+//Given an input errey , give me back even values only
+const arr = [1, 2, 3, 4, 5];
+//ans
+// const newArr = [];
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i]%2 == 0){
+//         newArr.push(arr[i]);
+//     }}
+// console.log(newArr);
 
-//Given an arrey, give me a new arrey in which every value is multiplied by 2
-//[1,2,3,4,5]
-//[2,4,6,8,10]
-
-const input = [1, 2,3, 4, 5 ];
-
-//  Solution
-// const newArrey = [];
-
-// for (let i = 0; i < input.length; i++)  {
-//         newArrey.push(input[i] * 9)
-// };
-
-// console.log(newArrey); 
-
-// Other solution with using map
-
-function transform(i){
-    return i * 9;
-};
-//Map(arr, transform);
-const ans = input.map(transform);
-
+//other ans Using Filter function
+function filterLogic(n){
+    if (n%2 == 0){
+        return true;
+    }else{
+        return false;
+    }}
+const ans = arr.filter(filterLogic);
 console.log(ans);
+
